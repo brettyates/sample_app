@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+	attr_accessor :title
+	
   def home
   end
 
@@ -6,5 +8,6 @@ class StaticPagesController < ApplicationController
   end
 
   def about
+  	@title = 'About Us'
   end
 end
